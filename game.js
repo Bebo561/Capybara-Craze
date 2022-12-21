@@ -78,9 +78,9 @@ let end = setInterval(() => {
     // we add the orangeCollected class to the orange CSS to signify to the player they have collected an orange by making it disappear.
     if(capyBottom <= 90 && fruitleft >= 40 && fruitleft <= 100 && fruit.classList != ("orangeCollected")){
         fruit.classList.add("orangeCollected");
-        //After 2 seconds, the function automatically removes the orangeCollected class to make the orange reappear.
+        //After 1 seconds, the function automatically removes the orangeCollected class to make the orange reappear.
         setTimeout(() => {
             fruit.classList.remove("orangeCollected");
-        }, 2000);
+        }, 1000);
     }
 }, 10);
